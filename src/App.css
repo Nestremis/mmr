@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+@import url("https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,900&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  background-image: url("wood.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+  background-clip: border-box;
+}
+
+h1 {
+  font-family: 'Grandstander', cursive;
+  margin: 10px;
+  font-size: 6vh;
+  color: dodgerblue;
+  opacity: .8;
+  -webkit-text-stroke: 2px black;
+  text-shadow: 4px 4px 0 #070c0c, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+input {
+  box-shadow: inset 0 0 2px;
+  width: 30vw;
+  height: 5vh;
+  /* margin-bottom: 10px; */
+  text-align: center;
+  font-weight: 700;
+  font-size: medium;
+  background-color: #dbdb96;
+}
+
+input:focus {
+  outline: none;
+}
+
+.buttonsContainer {
+  perspective: 200px;
+  margin-bottom: -2vh;
+}
+
+.btn {
+  text-align: center;
+  margin: 2vw;
+  width: 100px;
+  height: 40px;
+  border: 4px solid #1d1d1d;
+  background-color: #006bd6;
+  /* opacity: .9; */
+  color: #dbdb96;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: .3s linear;
+}
+
+.btn1:hover {
+  transform: rotate(10deg);
+  box-shadow: -15px 0px 15px black;
+  color: #dbdb96;
+  background-color: dodgerblue;
+}
+
+.btn2 {
+  background-color: #a00000;
+  color: black;
+}
+
+.btn2:hover {
+  transform: rotate(-10deg);
+  box-shadow: 15px 0 15px black;
+  color: #dbdb96;
+  background-color: #db0000;
+}
+
+.wrapper {
+  height: 100vh;
+}
+
+.header {
+  text-align: center;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 3vh;
+}
+
+.cards-table {
+  /* background-color: cadetblue; */
+  width: 94vw;
+  height: 70vh;
+  align-items: center;
+  margin: auto;
+  /* margin-top: 5vh; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  display: grid;
+  grid-template: repeat(6, 1fr)/repeat(6, 1fr);
+  grid-gap: 2vw;
+}
+
+.card {
+  margin: auto;
+  height: 13vh;
+  width: 26vh;
+  margin: auto;
+  cursor: pointer;
+  box-shadow: 12px 12px 10px black;
+  border-radius: 5px;
+  border: 2px solid #0c0c0c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("wildlife.jpg");
+  background-size: cover;
+}
+
+.card-translation {
+  height: 13vh;
+  width: 26vh;
+  background: #F3F6B0;
+  background: radial-gradient(ellipse at center, #F3F6B0, #7C671F);
+  background-size: cover;
+  margin: auto;
+  box-shadow: 12px 12px 10px black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #0c0c0c;
+}
+
+.card-inactive {
+  background-color: #51ffff;
+  /* visibility: hidden; */
+}
+/*# sourceMappingURL=App.css.map */
