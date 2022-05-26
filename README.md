@@ -1,5 +1,5 @@
 # mmr
-apllication made withe redux toolkit for state managment
+aplication made withe redux toolkit for state managment
 
 use "npm start" to run the code
 
